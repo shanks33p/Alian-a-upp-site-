@@ -1,4 +1,4 @@
-DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -23,8 +23,8 @@ DOCTYPE html>
 <div class="lightning right"></div>
 
 <section class="slider">
-    <img class="slide" src="https://github.com/shanks33p/Alian-a-upp-site-/issues/1#issue-3095314732" alt="Regra 1">
-    <img class="slide src="https://github.com/shanks33p/Alian-a-upp-site-/issues/2#issue-3095359546" alt="Regra 2">
+    <img class="slide" src="https://github.com/user-attachments/assets/d3436e57-d638-4b74-bcb6-002ade44de31" alt="Regra 1">
+    <img class="slide" src="https://github.com/user-attachments/assets/fdefe9a8-7bb3-4a3f-b5ca-ec122295c4b" alt="Regra 2">
     <img class="slide" src="https://github.com/user-attachments/assets/8ea87328-e454-4cf3-8e60-e5e006100d3c)" alt="Regra 3">
     <img class="slide" src="https://github.com/user-attachments/assets/c783dafe-dcac-4c3c-8614-d4bbee359310" alt="Regra 4">
     <img class="slide" src="https://github.com/user-attachments/assets/ce2be4ab-9856-45f3-a7ab-01fc4d7dedb1" alt="Regra 5">
@@ -78,3 +78,4 @@ DOCTYPE html>
 <script src="script.js"></script>
 </body>
 </html>
+

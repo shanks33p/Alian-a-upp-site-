@@ -1,0 +1,104 @@
+body {
+    background: linear-gradient(to bottom, #001f3f, #0074D9);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #001f3f;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav button {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.lightning {
+    position: fixed;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #00f, transparent);
+    animation: flash 1s infinite;
+}
+
+.lightning.left {
+    left: 0;
+}
+
+.lightning.right {
+    right: 0;
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+.slider {
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+    padding: 20px;
+}
+
+.slide {
+    min-width: 200px;
+    background: #003366;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.info {
+    padding: 20px;
+    background-color: rgba(0,0,50,0.5);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.black-button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+form {
+    margin: 20px;
+}
+
+textarea, input[type="text"], input[type="file"] {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.eventos {
+    margin: 20px;
+}
+
+#galeria img {
+    width: 200px;
+    margin: 10px;
+    border: 2px solid white;
+}

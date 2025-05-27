@@ -1,20 +1,80 @@
-# Aliança UPP - Site Oficial
+DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aliança UPP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-Site para a gestão da Aliança UPP no WePlay.
+<header>
+    <div class="logo">🌐 Aliança UPP</div>
+    <nav>
+        <button id="menu-btn">☰ Menu</button>
+        <div id="menu" class="hidden">
+            <button onclick="abrirListaNegra()">Lista Negra</button>
+            <button onclick="abrirFeedback()">Feedbacks</button>
+            <button onclick="abrirInscricao()">Inscrição para o Conselho</button>
+        </div>
+    </nav>
+</header>
 
-## Funcionalidades
+<div class="lightning left"></div>
+<div class="lightning right"></div>
 
-- Lista negra com link.
-- Feedback anônimo ou identificado.
-- Inscrição para o Conselho.
-- Slider com regras.
-- Informações sobre reuniões.
-- Galeria de eventos com upload de imagens.
+<section class="slider">
+    <img class="slide" src="https://github.com/shanks33p/Alian-a-upp-site-/issues/1#issue-3095314732" alt="Regra 1">
+    <img class="slide src="https://github.com/shanks33p/Alian-a-upp-site-/issues/2#issue-3095359546" alt="Regra 2">
+    <img class="slide" src="https://github.com/user-attachments/assets/8ea87328-e454-4cf3-8e60-e5e006100d3c)" alt="Regra 3">
+    <img class="slide" src="https://github.com/user-attachments/assets/c783dafe-dcac-4c3c-8614-d4bbee359310" alt="Regra 4">
+    <img class="slide" src="https://github.com/user-attachments/assets/ce2be4ab-9856-45f3-a7ab-01fc4d7dedb1" alt="Regra 5">
+    <img class="slide" src="https://github.com/user-attachments/assets/dddfb75f-d43c-4abd-9fe0-47caf5bd376d" alt="Regra 6">
+    <img class="slide" src="https://github.com/user-attachments/assets/bdba8729-68f7-4f27-ab32-8b633c373a12" alt="Regra 7">
+</section>
 
-## Como rodar
+<section class="info">
+    <p>As reuniões da aliança são todas terças-feiras a partir das 21h. A sala será enviada no grupo da aliança junto com a senha por alguém da gestão.</p>
+</section>
 
-1. Clone o repositório.
-2. Abra o `index.html` no navegador.
-3. Ou publique no GitHub Pages:
-   - Vá em "Settings" → "Pages" → selecione a branch e "root".
-   - Acesse a URL gerada.
+<section class="buttons">
+    <button class="black-button" onclick="abrirListaNegra()">Lista Negra</button>
+    <button class="black-button" onclick="abrirFeedback()">Feedbacks</button>
+</section>
+
+<section class="feedback hidden">
+    <h2>Feedbacks</h2>
+    <p>Preencha o formulário clicando <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0TmnI6YwrOdAAvZ0rZl5u4Y3Oy6RrkoyAeNhLwGrxEFskug/viewform?usp=sf_link" target="_blank">aqui</a>.</p>
+</section>
+
+<section class="inscricao hidden">
+    <h2>Inscrição para o Conselho</h2>
+    <form>
+        <label>Seu ID?</label><br>
+        <input type="text"><br>
+
+        <label>Qual nome da sua família?</label><br>
+        <input type="text"><br>
+
+        <label>Qual seu ponto forte?</label><br>
+        <input type="text"><br>
+
+        <label>O que é mais importante pra você na WePlay?</label><br>
+        <input type="text"><br>
+
+        <button type="submit">Enviar Inscrição</button>
+    </form>
+</section>
+
+<section class="eventos">
+    <h2>Eventos da Aliança</h2>
+    <form id="foto-form">
+        <input type="text" placeholder="Título do Evento" id="titulo-evento"><br>
+        <input type="file" id="foto-evento"><br>
+        <button type="submit">Postar</button>
+    </form>
+    <div id="galeria"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

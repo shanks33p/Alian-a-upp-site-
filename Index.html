@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aliança UPP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">🌐 Aliança UPP</div>
+    <nav>
+        <button id="menu-btn">☰ Menu</button>
+        <div id="menu" class="hidden">
+            <button onclick="abrirListaNegra()">Lista Negra</button>
+            <button onclick="abrirFeedback()">Feedbacks</button>
+            <button onclick="abrirInscricao()">Inscrição para o Conselho</button>
+        </div>
+    </nav>
+</header>
+
+<div class="lightning left"></div>
+<div class="lightning right"></div>
+
+<section class="slider">
+    <div class="slide">Regra 1</div>
+    <div class="slide">Regra 2</div>
+    <div class="slide">Regra 3</div>
+    <div class="slide">Regra 4</div>
+    <div class="slide">Regra 5</div>
+    <div class="slide">Regra 6</div>
+    <div class="slide">Regra 7</div>
+</section>
+
+<section class="info">
+    <p>As reuniões da aliança são todas terças-feiras a partir das 21h. A sala será enviada no grupo da aliança junto com a senha por alguém da gestão.</p>
+</section>
+
+<section class="buttons">
+    <button class="black-button" onclick="abrirListaNegra()">Lista Negra</button>
+    <button class="black-button" onclick="abrirFeedback()">Feedbacks</button>
+</section>
+
+<section class="feedback hidden">
+    <h2>Feedbacks</h2>
+    <p>Preencha o formulário clicando <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0TmnI6YwrOdAAvZ0rZl5u4Y3Oy6RrkoyAeNhLwGrxEFskug/viewform?usp=sf_link" target="_blank">aqui</a>.</p>
+</section>
+
+<section class="inscricao hidden">
+    <h2>Inscrição para o Conselho</h2>
+    <form>
+        <label>Seu ID?</label><br>
+        <input type="text"><br>
+
+        <label>Qual nome da sua família?</label><br>
+        <input type="text"><br>
+
+        <label>Qual seu ponto forte?</label><br>
+        <input type="text"><br>
+
+        <label>O que é mais importante pra você na WePlay?</label><br>
+        <input type="text"><br>
+
+        <button type="submit">Enviar Inscrição</button>
+    </form>
+</section>
+
+<section class="eventos">
+    <h2>Eventos da Aliança</h2>
+    <form id="foto-form">
+        <input type="text" placeholder="Título do Evento" id="titulo-evento"><br>
+        <input type="file" id="foto-evento"><br>
+        <button type="submit">Postar</button>
+    </form>
+    <div id="galeria"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
